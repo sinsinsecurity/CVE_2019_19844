@@ -7,7 +7,7 @@ PoC for [CVE-2019-19844](https://www.djangoproject.com/weblog/2019/dec/18/securi
 ## Setup
 
 1. docker-compose run --service-ports web python manage.py migrate --no-input
-2. docker-compose run --service-ports web python manage.py createsuperuser --email=me@0xsha.io --username 0xsha
+2. docker-compose run --service-ports web python manage.py createsuperuser --email=admin@evilcorp.com --username admin
 3. Head on to localhost:8000/accounts/password-reset
-4. me@0xsha.ıo and hit enter (Note that "i" is malformed)
+4. admin@evılcorp.com and hit enter (Note that "i" is malformed)
 5. Check the console
